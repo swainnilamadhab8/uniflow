@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UniFlow — App</title><meta name="theme-color" content="#0d1024">
+<link rel="stylesheet" href="app.css"></head><body>
+<div id="login"><div class="c" style="width:min(440px,92vw);margin:0"><a class="logo" href="../index.html" style="font-size:26px" title="Back to home">Uni<b>Flow</b></a><p class="sub" id="lt">Sign in to your account</p><div id="lc" style="margin-bottom:8px"></div><input id="lu" placeholder="User ID"><input id="lp" type="password" placeholder="Password" onkeydown="if(event.key=='Enter')doLogin()"><div id="le" class="alert r" style="display:none"></div><button class="btn" style="width:100%" onclick="doLogin()">Sign in</button><button class="btn o" id="stg" style="width:100%;margin-top:8px" onclick="togSu()">Create an account</button><div id="su" style="display:none;margin-top:12px"><input id="sn" placeholder="Full name"><input id="si" placeholder="Choose a User ID"><input id="sp" type="password" placeholder="Choose a password"><select id="sr"></select><div id="se" class="alert r" style="display:none"></div><button class="btn" style="width:100%" onclick="doSignup()">Sign up</button></div><p class="mu" style="font-size:12px;margin:12px 0 0">Tap a role above to auto-fill its demo login. Demo build: accounts are stored in this browser only.</p></div></div>
+<header><a class="logo" href="../index.html" title="Back to home">Uni<b>Flow</b></a><div class="roles" id="roles"></div><button class="bell" onclick="togN()">🔔<i id="bc"></i></button></header>
+<div class="card c" id="np"></div><div class="wrap"><nav id="nav"></nav><main id="main"></main></div><div id="toast"></div>
+<script src="app.js"></script></body></html>
